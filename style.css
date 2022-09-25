@@ -1,0 +1,27 @@
+body {
+    background: #001a3d;
+    color: white;
+}
+th, td{
+  border: 1px solid white;
+  height: 30px;
+  width: 150px;
+}
+tr{
+  width: 150px;
+}
+#cp{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  background: linear-gradient(#004042, #006369, #002829);
+  border-radius: 5px;
+  padding: 5px;
+}
+#getcolor{
+  background: blue;
+  width: 100px;
+  border: none;
+  color: white;padding: 5px;
+  border-radius: 5px;
+}

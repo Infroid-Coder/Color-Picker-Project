@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webpage</title>
+</head>
+<body>
+  <h1 id="txt">Hello World!</h1>
+  <button onclick="colorChng()">change colour</button>
+
+<style>
+  h1{
+  color: white;
+    font-weight: 900;
+  }
+  body{
+    background: black;
+  }
+</style>
+<script>
+  let element = document.getElementById("txt");
+  let colours = ["yellow", "blue" , "green", "red", "pink"];
+  let i = 0;
+function colorChng(){
+  //let changeClr = confirm("Are you sure you wanna change the colour of the text?");
+   //else {
+    //clearInterval(interval)
+  //}
+  element.style.color = colours[i];
+    i++;
+    
+  if(i == colours.length){
+    i = 0;
+  }
+    
+  let interval = setInterval(colorChng, 1000);
+}
+
+</script>
+</body>
+</html>
